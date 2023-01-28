@@ -3,10 +3,12 @@
 @tailwind utilities;
 
 
-@layer components {
+@layer base {
     h1 {
-    @apply text-red-500
-    
+        @apply text-red-500 text-3xl
+    }
 }
 
+@layer components {
+    
 }
