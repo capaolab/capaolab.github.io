@@ -10,5 +10,19 @@
 }
 
 @layer components {
-    
+    .capao-nav {
+        @apply w-full h-auto
+        flex flex-col justify-start items-center
+        bg-black opacity-80
+        text-white
+    }  
+    .social-nav {
+        @apply w-full h-auto px-32 py-2
+        flex justify-end items-center
+        border-b border-stone-800
+    }  
+    .menu-nav {
+        @apply w-full h-auto px-32 py-2
+        flex justify-start items-center
+    }
 }
