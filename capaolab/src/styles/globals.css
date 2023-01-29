@@ -11,9 +11,19 @@
 
 
 @layer components {
+
+    /* BUTTONS */
+    .btn-carousel {
+        @apply w-24 h-12 px-4 py-2
+        flex justify-center items-center
+        bg-blue-800
+        text-white
+    }
+
+    /* NAV BAR*/
     .capao-nav {
         @apply w-full h-auto flex flex-col 
-        bg-black opacity-80
+        bg-black opacity-60
         text-white
     }  
     .social-nav {
@@ -26,16 +36,40 @@
     } 
     .menu-nav {
         @apply flex justify-center sm:justify-start
-                
     }
     .menu-nav-btn {
         @apply 
-        flex flex-col sm:flex-row  
-         
+        flex flex-col sm:flex-row     
     }
     .menu-nav-btn a {
         @apply hover:text-[#0ac775]
          hover:text-lg flex items-start text-start align-top p-6
+    }
 
-        }
+    /* SHOW CASE */
+    .showcase {
+        @apply w-full h-full
+    }
+    .carousel {
+        @apply w-full h-60
+        flex flex-col justify-center items-center
+    }
+    .carousel-navegation {
+        @apply w-full h-auto py-4
+        flex space-x-4 justify-center items-center
+    }
+    .carousel-img {
+        @apply w-full h-auto bg-cover
+    }
+    .atividades {
+        @apply w-full h-auto mt-[36rem] py-24
+        flex flex-col justify-center items-center
+    }
+    .atividades ul {
+        @apply w-full h-full
+        flex space-x-20 justify-center items-center
+    }
+    .atividades-images {
+        @apply w-full h-full rounded-full
+    }
 }

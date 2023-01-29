@@ -18,7 +18,7 @@ const CapaoNav = () => {
             </section>
             <section className="menu-nav">
                 <div className="w-20 h-20 p-2">
-                    {<Image src="/nature.svg" width={128} height={70} />}
+                    <Image src="/nature.svg" width={128} height={70} />
                 </div>
                 <div className="menu-nav-btn">
                     <a href="">Home</a>
