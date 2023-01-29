@@ -4,7 +4,6 @@ const Home = () => {
   return (
     <>
       <CapaoNav />
-      <h1>CapaoLab</h1>
     </>
   )
 }
