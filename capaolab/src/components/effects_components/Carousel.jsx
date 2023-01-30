@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import { carouselImages } from "@/helpers/carouselImages";
 
 const Carousel = () => {
-    const [ index, setIndex ] = useState(0)
+    const [index, setIndex] = useState(0)
     const carouselLength = carouselImages.length
 
     const handlePrevious = () => {
@@ -18,7 +18,7 @@ const Carousel = () => {
 
     return (
         <div className="carousel">
-            <Image className="carousel-img" src={carouselImages[index].image} width={1080} height={600} />
+            <Image className="carousel-img" alt="carousel" src={carouselImages[index].image} width={1080} height={600} />
             <div className="carousel-navegation">
                 <button className="btn-carousel" onClick={handlePrevious}>Previous</button>
                 <button className="btn-carousel" onClick={handleNext}>Next</button>

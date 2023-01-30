@@ -11,15 +11,15 @@ const ShowCase = () => {
                 <h2>Áreas de Atuação</h2>
                 <ul>
                     <li>
-                        <Image className="atividades-images" src={atividadesImages[0].image} width={200} height={200} />
+                        <Image className="atividades-images" alt="atividades" src={atividadesImages[0].image} width={200} height={200} />
                         <h3>Desenvolvimento Web</h3>
                     </li>
                     <li>
-                        <Image className="atividades-images" src={atividadesImages[1].image} width={200} height={200} />
+                        <Image className="atividades-images" alt="atividades" src={atividadesImages[1].image} width={200} height={200} />
                         <h3>Mentorias</h3>
                     </li>
                     <li>
-                        <Image className="atividades-images" src={atividadesImages[2].image} width={200} height={200} />
+                        <Image className="atividades-images" alt="atividades" src={atividadesImages[2].image} width={200} height={200} />
                         <h3>BootCamps</h3>
                     </li>
                 </ul>

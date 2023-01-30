@@ -5,12 +5,18 @@
 
 @layer base {
    html, body{
-    @apply h-full w-full
+        @apply h-full w-full
    }
+
+
 }
 
 
 @layer components {
+
+    #__next {
+        @apply w-screen h-full bg-red-500
+    }
 
     /* BUTTONS */
     .btn-carousel {
@@ -23,7 +29,7 @@
     /* NAV BAR*/
     .capao-nav {
         @apply w-full h-auto flex flex-col 
-        bg-black opacity-60
+        bg-black 
         text-white
     }  
     .social-nav {
@@ -52,17 +58,17 @@
     }
     .carousel {
         @apply w-full h-60
-        flex flex-col justify-center items-center
+        flex flex-col items-center
     }
     .carousel-navegation {
         @apply w-full h-auto py-4
         flex space-x-4 justify-center items-center
     }
     .carousel-img {
-        @apply w-full h-auto bg-cover
+        @apply w-full h-auto
     }
     .atividades {
-        @apply w-full h-auto mt-[36rem] py-24
+        @apply w-full h-auto mt-[20rem] py-24
         flex flex-col justify-center items-center
     }
     .atividades ul {
@@ -70,6 +76,6 @@
         flex space-x-20 justify-center items-center
     }
     .atividades-images {
-        @apply w-full h-full rounded-full
+        @apply w-40 h-40 rounded-full
     }
 }
