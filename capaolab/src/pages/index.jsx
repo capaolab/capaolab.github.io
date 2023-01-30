@@ -3,10 +3,10 @@ import ShowCase from "@/components/ShowCase"
 
 const Home = () => {
     return (
-        <>
+        <main>
             <CapaoNav />
             <ShowCase />
-        </>
+        </main>
     )
 }
 
