@@ -3,7 +3,7 @@ import ShowCase from "@/components/ShowCase"
 
 const Home = () => {
     return (
-        <main>
+        <main className="w-full h-full flex flex-col">
             <CapaoNav />
             <ShowCase />
         </main>

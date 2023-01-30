@@ -1,5 +1,5 @@
 import { useState, useCallback, useEffect } from "react"
-import Image from "next/image"
+/* import Image from "next/image" */
 import SocitalNav from "./SocitalNav"
 
 const CapaoNav = () => {
@@ -21,8 +21,8 @@ const CapaoNav = () => {
         <nav className="capao-nav">
             {scroll === 0 ? <SocitalNav /> : null}
             <section className="menu-nav">
-                <div className="w-20 h-20 p-2">
-                    <Image alt="logo" src="/nature.svg" width={128} height={70} />
+                <div className="">
+                    <h1 className="h-full text-5xl text-[#14B471] flex items-center">CLab</h1>
                 </div>
                 <div className="menu-nav-btn">
                     <a href="">Home</a>

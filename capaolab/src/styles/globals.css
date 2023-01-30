@@ -26,19 +26,19 @@
     /* NAV BAR*/
     .capao-nav {
         @apply w-full h-auto fixed top-0
-        flex flex-col bg-black text-white
+        flex flex-col bg-black text-white bg-opacity-60
     }  
     .social-nav {
         @apply w-full h-auto px-0 sm:px-32 2xl:px-64 py-4
         flex justify-center sm:justify-end items-center
-        border-b border-green-800
+        border-b border-gray-500
     }
     .social-icons {
         @apply flex flex-row space-x-8
     } 
     .menu-nav {
         @apply w-full h-auto
-        flex justify-center sm:justify-start
+        flex justify-center sm:justify-around
     }
     .menu-nav-btn {
         @apply 
