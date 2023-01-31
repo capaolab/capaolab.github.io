@@ -18,8 +18,8 @@ const Carousel = () => {
     }
 
     return (
-        <div className="carousel relative backdrop-contrast-50">
-            <CallActions index={index} />
+        <div className="carousel">
+            <CallActions title={carouselImages[index].content.title} description={carouselImages[index].content.description} />
             <Image
                 className="carousel-img absolute top-0"
                 alt="carousel"
@@ -27,7 +27,7 @@ const Carousel = () => {
                 width={1920}
                 height={1080}
             />
-            <div className="carousel-navegation absolute top-72 2xl:top-96 z-30">
+            <div className="carousel-navegation">
                 <button className="btn-carousel" onClick={handleNext}>
                     <p>Next</p>
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">

@@ -25,16 +25,16 @@ const CapaoNav = () => {
         <nav className="capao-nav">
             {scroll === 0 ? <SocitalNav /> : null}
             <section className="menu-nav">
-                <div className="">
-                    <h1 className="h-full text-5xl text-[#14B471] font-black flex items-center">C.Lab</h1>
+                <div className="w-1/3">
+                    <h1 className="h-full text-5xl text-[#14B471] font-black flex justify-start items-center">CapaoLab</h1>
                 </div>
+                <ion-icon name={iconName} onClick={handleToggle}></ion-icon>
                 <div className="menu-nav-btn">
                     <a href="">Home</a>
                     <a href="">Eventos</a>
                     <a href="">Projetos</a>
                     <a href="">Equipe</a>
                     <a href="">contato</a>
-                    <ion-icon name={iconName} onClick={handleToggle}></ion-icon>
                 </div>
             </section>
         </nav>
