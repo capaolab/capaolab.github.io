@@ -4,7 +4,11 @@ import SocitalNav from "./SocitalNav"
 
 const CapaoNav = () => {
     const [scroll, setScroll] = useState(0)
+    const [iconName, setIconName] = useState("menu")
 
+    const handleToggle = () => {
+        iconName === "menu" ? setIconName("close") : setIconName("menu")
+    }
     const handleScroll = () => {
         setScroll(window.pageYOffset);
     }
@@ -30,6 +34,7 @@ const CapaoNav = () => {
                     <a href="">Projetos</a>
                     <a href="">Equipe</a>
                     <a href="">contato</a>
+                    <ion-icon name={iconName} onClick={handleToggle}></ion-icon>
                 </div>
             </section>
         </nav>

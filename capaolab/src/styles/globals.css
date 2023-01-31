@@ -7,6 +7,9 @@
    html, body{
         @apply h-full w-full
    }
+   ion-icon {
+    @apply text-pink-500 text-5xl
+   }
 }
 
 
@@ -18,14 +21,15 @@
 
     /* BUTTONS */
     .btn-carousel {
-        @apply w-24 h-12 px-4 py-2
+        @apply w-40 h-auto px-4 py-2 space-x-4
         flex justify-center items-center
-        bg-emerald-500 hover:bg-emerald-600 rounded text-white
+        text-white rotate-[270deg] text-lg 2xl:text-xl
+        hover:text-green-500
     }
 
     /* NAV BAR*/
     .capao-nav {
-        @apply w-full h-auto fixed top-0
+        @apply w-full h-auto fixed top-0 z-50
         flex flex-col bg-black text-white bg-opacity-60
     }  
     .social-nav {
@@ -53,22 +57,23 @@
 
     /* SHOW CASE */
     .showcase {
-        @apply w-full h-full
+        @apply w-full h-full 
     }
     .carousel {
-        @apply w-full h-60
-        flex flex-col items-center
+        @apply w-full h-full z-0
     }
     .carousel-navegation {
-        @apply w-full h-auto py-4
-        flex space-x-4 justify-center items-center
+        @apply w-full h-auto 
+        flex flex-col justify-center items-end
+        space-y-40
     }
     .carousel-img {
-        @apply w-full h-auto
+        @apply w-screen max-h-[720px]  2xl:max-h-[1080px]
     }
     .atividades {
-        @apply w-full h-auto mt-[40rem] py-24
+        @apply w-full h-auto
         flex flex-col justify-center items-center
+        bg-white
     }
     .atividades ul {
         @apply w-full h-full
@@ -76,5 +81,12 @@
     }
     .atividades-images {
         @apply w-40 h-40 rounded-full
+    }
+    .action{
+        @apply w-full h-full z-20 absolute top-0
+        backdrop-brightness-90 bg-black/30
+    }
+    .action h2 {
+        @apply py-2 text-2xl font-bold text-white
     }
 }
