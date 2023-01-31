@@ -20,7 +20,7 @@
     .btn-carousel {
         @apply w-24 h-12 px-4 py-2
         flex justify-center items-center
-        bg-blue-800 text-white
+        bg-emerald-500 hover:bg-emerald-600 rounded text-white
     }
 
     /* NAV BAR*/
@@ -30,24 +30,26 @@
     }  
     .social-nav {
         @apply w-full h-auto px-0 sm:px-32 2xl:px-64 py-4
-        flex justify-center sm:justify-end items-center
+        flex justify-center md:justify-end items-center
         border-b border-gray-500
     }
     .social-icons {
         @apply flex flex-row space-x-8
     } 
     .menu-nav {
-        @apply w-full h-auto
-        flex justify-center sm:justify-around
+        @apply w-full h-auto space-x-20
+        flex justify-center sm:justify-center
     }
     .menu-nav-btn {
         @apply 
-        flex flex-col sm:flex-row     
+        flex flex-col md:flex-row     
     }
     .menu-nav-btn a {
-        @apply hover:text-[#0ac775]
-         hover:text-lg flex items-start text-start align-top p-6
-    }
+        @apply  
+        flex items-start text-start align-top p-6
+        hover:text-[#0ac775] duration-500 hover:scale-125 
+        
+        }
 
     /* SHOW CASE */
     .showcase {

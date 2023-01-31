@@ -22,7 +22,7 @@ const CapaoNav = () => {
             {scroll === 0 ? <SocitalNav /> : null}
             <section className="menu-nav">
                 <div className="">
-                    <h1 className="h-full text-5xl text-[#14B471] flex items-center">CLab</h1>
+                    <h1 className="h-full text-5xl text-[#14B471] font-black flex items-center">C.Lab</h1>
                 </div>
                 <div className="menu-nav-btn">
                     <a href="">Home</a>
