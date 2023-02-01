@@ -1,15 +1,15 @@
 import Image from "next/image"
 import React from 'react';
 import Carousel from './effects_components/Carousel';
-import { atividadesImages } from "@/helpers/carouselImages";
+import { atividadesImages } from "@/helpers/dataHelper";
 
 const ShowCase = () => {
     return (
         <section className="showcase">
             <Carousel />
             <article className="atividades alinhamento">
-                <h2>Áreas de 
-                    <span className=" ml-4 text-3xl tracking-wide underline underline-offset-4 decoration-red-700">Atuação</span> 
+                <h2>Como 
+                    <span className=" ml-4 text-3xl tracking-wide underline underline-offset-4 decoration-red-700">Inscrever-se</span> 
                 </h2>
                 <ul>
                     <li>

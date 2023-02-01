@@ -1,7 +1,7 @@
-import { useState, useCallback, useEffect } from "react"
 /* import Image from "next/image" */
+import { useState, useCallback, useEffect } from "react"
 import SocitalNav from "./SocitalNav"
-import ToggleMenu from "./Navbar/ToggleMenu"
+import ToggleMenu from "./ToggleMenu"
 
 const CapaoNav = () => {
     
@@ -40,7 +40,7 @@ const CapaoNav = () => {
                     <a href="">contato</a>
                 </div>
                 <div className="hamburger-btn">
-                    <ion-icon name={iconName} onClick={handleToggle}></ion-icon>
+                    <ion-icon id="toggle-svg" name={iconName} onClick={handleToggle}></ion-icon>
                 </div>
             </section>
             {iconName === "close" ? <ToggleMenu /> : null}

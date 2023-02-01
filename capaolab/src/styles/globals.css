@@ -7,28 +7,31 @@
    html, body{
         @apply h-full w-full
    }
-   ion-icon {
-    @apply text-pink-500 text-5xl
-   }
    h2 {
-    @apply text-3xl font-medium tracking-wide
-   }
-   h3 {
-    @apply text-xl tracking-wide
-   }
+       @apply text-3xl font-medium tracking-wide
+    }
+    h3 {
+        @apply text-xl tracking-wide
+    }
 }
 
 
 @layer components {
-
     #__next {
         @apply w-full h-full 
     }
 
     /* GLOBAL */
-
     .alinhamento {
         @apply px-0 sm:px-32 2xl:px-64 
+    }
+    
+    /* SVG ICONS */
+    #toggle-svg {
+        @apply  text-xl
+    }
+    #webapp-svg {
+        @apply  text-green-500 text-5xl
     }
 
     /* BUTTONS */
@@ -80,10 +83,10 @@
 
     /* SHOW CASE */
     .showcase {
-        @apply w-full h-full 
+        @apply w-full h-full relative
     }
     .carousel {
-        @apply w-full h-full z-0 relative
+        @apply w-full h-full z-0
     }
     .carousel-navegation {
         @apply w-auto h-auto absolute top-72 right-0 2xl:top-96 z-20
@@ -134,5 +137,24 @@
     .action-wrapper div {
         @apply w-full h-auto mt-6 gap-6
         flex flex-col sm:flex-row 
+    }
+
+    /* WORK SESSION */
+    
+    .work{
+        @apply w-full py-32 
+        bg-slate-800 text-white
+    }
+    .work-wrapper{
+        @apply grid grid-cols-2 gap-4 justify-center items-center
+    }
+
+    /* EQUIPE SESSION */
+
+    .equipe{
+        @apply w-full py-32
+    }
+    .equipe-list{
+        @apply flex space-x-12 justify-center items-center
     }
 }
