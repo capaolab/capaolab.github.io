@@ -3,6 +3,7 @@ import { useState, useCallback, useEffect } from "react"
 import SocitalNav from "./SocitalNav"
 
 const CapaoNav = () => {
+    
     const [scroll, setScroll] = useState(0)
     const [iconName, setIconName] = useState("menu")
 
@@ -21,6 +22,8 @@ const CapaoNav = () => {
         }
     }, []);
 
+
+
     return (
         <nav className="capao-nav">
             {scroll === 0 ? <SocitalNav /> : null}
@@ -28,13 +31,15 @@ const CapaoNav = () => {
                 <div className="w-1/3">
                     <h1 className="h-full text-5xl text-[#14B471] font-black flex justify-start items-center">CapaoLab</h1>
                 </div>
-                <ion-icon name={iconName} onClick={handleToggle}></ion-icon>
                 <div className="menu-nav-btn">
                     <a href="">Home</a>
                     <a href="">Eventos</a>
                     <a href="">Projetos</a>
                     <a href="">Equipe</a>
                     <a href="">contato</a>
+                </div>
+                <div className="hamburger-btn hidden">
+                    <ion-icon name={iconName} onClick={handleToggle}></ion-icon>
                 </div>
             </section>
         </nav>

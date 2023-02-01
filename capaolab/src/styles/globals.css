@@ -47,7 +47,7 @@
         border-b border-gray-500
     }
     .social-icons {
-        @apply flex flex-row space-x-8
+        @apply flex flex-row space-x-8 px-7
     } 
     .menu-nav {
         @apply w-full h-auto px-0 sm:px-32 2xl:px-64 py-2 space-x-20
@@ -60,6 +60,9 @@
     .menu-nav-btn a {
         @apply flex justify-end items-start text-start align-top p-6
         hover:text-[#0ac775] duration-500 hover:scale-125 
+    }
+    .hamburger-btn {
+        @apply flex items-center justify-center 
     }
 
     /* SHOW CASE */
