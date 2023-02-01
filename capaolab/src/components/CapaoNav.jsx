@@ -29,8 +29,8 @@ const CapaoNav = () => {
         <nav className="capao-nav">
             {scroll === 0 ? <SocitalNav /> : null}
             <section className="menu-nav">
-                <div className="w-1/3">
-                    <h1 className="h-full text-xl md:text-5xl text-[#14B471] font-bold flex justify-start items-center">CapaoLab</h1>
+                <div className="">
+                    <h1 className="h-full text-3xl md:text-4xl text-[#14B471] font-bold flex justify-start items-center">CapaoLab</h1>
                 </div>
                 <div className="menu-nav-btn">
                     <a href="">Home</a>
