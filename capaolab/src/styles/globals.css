@@ -142,19 +142,24 @@
     /* WORK SESSION */
     
     .work{
-        @apply w-full py-32 
+        @apply w-full h-full py-32 
         bg-slate-800 text-white
     }
     .work-wrapper{
-        @apply grid grid-cols-2 gap-4 justify-center items-center
+        @apply h-full grid grid-cols-1 sm:grid-cols-2 gap-4
+        justify-center items-center px-5
     }
 
     /* EQUIPE SESSION */
 
     .equipe{
-        @apply w-full py-32
+        @apply w-full py-32 flex-col sm:flex-wrap justify-center 
+        items-center space-y-12 
+    }
+    .equipe h2 {
+        @apply text-center font-bold
     }
     .equipe-list{
-        @apply flex space-x-12 justify-center items-center
+        @apply flex flex-wrap gap-10 justify-center items-center
     }
 }

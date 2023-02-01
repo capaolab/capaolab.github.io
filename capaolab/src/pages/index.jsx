@@ -8,7 +8,7 @@ const Home = () => {
         <main className="w-full h-full">
             <CapaoNav />
             <ShowCase />
-            <div className="w-full h-[40rem] invisible"></div>
+            <div className="w-full h-[80rem] sm:h-[40rem] invisible"></div>
             <Work />
             <Equipe />
         </main>
