@@ -2,6 +2,7 @@ import CapaoNav from "@/components/Navbar/CapaoNav"
 import ShowCase from "@/components/ShowCase"
 import Work from "@/components/Work"
 import Equipe from "@/components/Equipe"
+import Footer from "@/components/Footer"
 
 const Home = () => {
     return (
@@ -11,6 +12,7 @@ const Home = () => {
             <div className="w-full h-[80rem] sm:h-[40rem] invisible"></div>
             <Work />
             <Equipe />
+            <Footer />
         </main>
     )
 }

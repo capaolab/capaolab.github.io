@@ -162,4 +162,12 @@
     .equipe-list{
         @apply flex flex-wrap gap-10 justify-center items-center
     }
+
+    /* FOOTER */
+
+    .capao-footer{
+        @apply w-full h-auto py-32
+        flex justify-start items-center
+        bg-gray-900 text-white
+    }
 }
