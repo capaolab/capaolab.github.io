@@ -8,9 +8,7 @@ const ShowCase = () => {
         <section className="showcase">
             <Carousel />
             <article className="atividades alinhamento">
-                <h2>Como 
-                    <span className=" ml-4 text-3xl tracking-wide underline underline-offset-4 decoration-red-700">Inscrever-se</span> 
-                </h2>
+                <h2 className="ml-4 underline underline-offset-8 decoration-red-700">Como participar</h2>
                 <ul>
                     <li>
                         <Image className="atividades-images" alt="atividades" src={atividadesImages[0].image} width={800} height={800} />
