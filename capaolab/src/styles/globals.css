@@ -51,6 +51,15 @@
     #equipe-svg {
         @apply  text-gray-700 text-xl
     }
+    #footer-svg {
+        @apply  text-gray-400 text-xl
+    }
+    #footer-news-svg {
+        @apply  text-green-500 text-xl
+    }
+    #footer-contato-svg {
+        @apply  text-green-500 text-xl
+    }
     .icon-inner{
         @apply w-auto h-auto flex justify-start items-end
     }
@@ -191,8 +200,26 @@
     /* FOOTER */
 
     .capao-footer{
-        @apply w-full h-auto py-32
-        flex justify-start items-center
+        @apply w-full h-auto py-20
+        flex justify-start items-start
         bg-gray-900 text-white
+    }
+    .footer-sobre{
+        @apply w-1/3 h-full px-4 
+        flex flex-col justify-start items-start 
+    }
+    .footer-events{
+        @apply w-1/3 h-full px-4 
+        flex flex-col justify-start items-start
+    }
+    .footer-contatos{
+        @apply w-1/3 h-full px-4 
+        flex flex-col justify-start items-start
+    }
+    .footer-news{
+        @apply w-full h-full flex space-x-2 
+    }
+    .footer-contatos-item{
+        @apply w-full h-full flex flex-col  
     }
 }

@@ -97,3 +97,9 @@ export const equipeData = [
         social_3: "mail-outline"
     },
 ]
+
+export const footerData = {
+    text: "Capão Lab é uma iniciativa social que trabalha com educação e pesquisa em tecnologia para aproximar pessoas ao mundo digital.",
+    social_1: "logo-linkedin",
+    social_2: "logo-instagram",
+}
