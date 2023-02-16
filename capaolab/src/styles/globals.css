@@ -63,7 +63,14 @@
     .icon-inner{
         @apply w-auto h-auto flex justify-start items-end
     }
-
+    .logo-image{
+        @apply w-20 h-20 p-4
+    }
+    .logo-title{
+        @apply h-full text-2xl
+        flex justify-start items-center
+        text-green-500 font-semibold uppercase
+    }
     /* BUTTONS */
     .btn-carousel {
         @apply w-40 h-auto px-4 py-2 space-x-4

@@ -2,7 +2,7 @@ import { workData } from "@/helpers/dataHelper";
 
 const Work = () => {
     return (
-        <section className="work alinhamento">
+        <section id="work" className="work alinhamento">
             <h2 className="mb-10 text-white underline underline-offset-8 decoration-yellow-400">O que fazemos?</h2>
             <ul className="work-wrapper">
                 {

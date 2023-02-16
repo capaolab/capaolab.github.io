@@ -7,7 +7,7 @@ const ShowCase = () => {
     return (
         <section className="showcase">
             <Carousel />
-            <article className="atividades alinhamento">
+            <article id="participar" className="atividades alinhamento">
                 <h2 className="ml-4 underline underline-offset-8 decoration-red-700">Como participar</h2>
                 <ul>
                     <li>

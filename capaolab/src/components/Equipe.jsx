@@ -3,7 +3,7 @@ import Image from "next/image"
 
 const Equipe = () => {
     return (
-        <section className="equipe alinhamento">
+        <section id="equipe" className="equipe alinhamento">
             <h2 className=" py-4 underline underline-offset-8 decoration-purple-400">Equipe CapãoLab</h2>
             <div className="equipe-wrapper">
                 <ul className="equipe-list">

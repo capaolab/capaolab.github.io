@@ -18,7 +18,7 @@ const Carousel = () => {
     }
 
     return (
-        <div className="carousel">
+        <div id="carousel" className="carousel">
             <CallActions title={carouselImages[index].content.title} description={carouselImages[index].content.description} />
             <Image
                 className="carousel-img absolute top-0"

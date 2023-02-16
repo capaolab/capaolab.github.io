@@ -2,9 +2,11 @@
 import { useState, useCallback, useEffect } from "react"
 import SocitalNav from "./SocitalNav"
 import ToggleMenu from "./ToggleMenu"
+import Image from "next/image"
+
 
 const CapaoNav = () => {
-    
+
     const [scroll, setScroll] = useState(0)
     const [iconName, setIconName] = useState("menu")
 
@@ -29,15 +31,15 @@ const CapaoNav = () => {
         <nav className="capao-nav">
             {scroll === 0 ? <SocitalNav /> : null}
             <section className="menu-nav">
-                <div className="">
-                    <h1 className="h-full text-3xl md:text-4xl text-[#14B471] font-bold flex justify-start items-center">CapaoLab</h1>
+                <div className="flex">
+                    <Image className="logo-image" alt="logo" src="/assets/logo.png" width={800} height={800} />
+                    <h1 className="logo-title">Capao_Lab</h1>
                 </div>
                 <div className="menu-nav-btn">
-                    <a href="">Home</a>
-                    <a href="">Eventos</a>
-                    <a href="">Projetos</a>
-                    <a href="">Equipe</a>
-                    <a href="">contato</a>
+                    <a href="#carousel">Inicio</a>
+                    <a href="#participar">Participar</a>
+                    <a href="#work">O que fazemos</a>
+                    <a href="#equipe">Equipe</a>
                 </div>
                 <div className="hamburger-btn">
                     <ion-icon id="toggle-svg" name={iconName} onClick={handleToggle}></ion-icon>
