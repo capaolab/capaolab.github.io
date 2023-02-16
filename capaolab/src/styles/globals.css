@@ -38,7 +38,7 @@
 
     /* GLOBAL */
     .alinhamento {
-        @apply px-0 sm:px-32 2xl:px-64 
+        @apply px-5 sm:px-32 2xl:px-64 
     }
     
     /* SVG ICONS */
@@ -180,14 +180,15 @@
     /* WORK SESSION */
     
     .work{
-        @apply w-full h-full py-32 
-        flex flex-col justify-center items-start
+        @apply w-full h-full py-32 md:py-64
+        flex flex-col  items-center
         bg-slate-800 text-white
     }
     .work-wrapper{
-        @apply h-full py-6 grid grid-cols-1 sm:grid-cols-2 gap-12
+        @apply h-auto  grid grid-cols-1 sm:grid-cols-2 gap-12
         justify-center items-center
     }
+   
 
     /* EQUIPE SESSION */
 
