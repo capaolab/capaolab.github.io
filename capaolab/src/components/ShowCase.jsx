@@ -1,7 +1,6 @@
 import Image from "next/image"
 import React from 'react';
 import Carousel from './effects_components/Carousel';
-import { atividadesImages } from "@/helpers/dataHelper";
 
 const ShowCase = () => {
     return (
@@ -11,20 +10,32 @@ const ShowCase = () => {
                 <h2 className="ml-4 underline underline-offset-8 decoration-red-700">Como participar</h2>
                 <ul>
                     <li>
-                        <Image className="atividades-images" alt="atividades" src={atividadesImages[0].image} width={800} height={800} />
-                        <h3 className="atividades-name">Desenvolvimento Web</h3>
+                        <p className="atividades-name ">
+                            Envie um email para:<br />
+                            <a className="underline mt-1 decoration-red-700 underline-offset-8"
+                                href="mailto:labcaete@gmail.com">labcaete@gmail.com
+                            </a>
+                        </p>
+                        <Image className="atividades-images" alt="atividades" src="/assets/email.svg" width={800} height={800} />
                     </li>
                     <li>
-                        <Image className="atividades-images" alt="atividades" src={atividadesImages[1].image} width={800} height={800} />
-                        <h3 className="atividades-name">Mentorias</h3>
+                        <Image className="atividades-images" alt="atividades" src="/assets/popular.svg" width={800} height={800} />
+                        <p className="atividades-name ">
+                            Aguarde o e-mail da nossa equipe<br />
+                            com link de acesso a nossos canais de comunicação
+                        </p>
                     </li>
                     <li>
-                        <Image className="atividades-images" alt="atividades" src={atividadesImages[2].image} width={800} height={800} />
-                        <h3 className="atividades-name">BootCamps</h3>
+                        <p className="atividades-name ">
+                            Fique atento ao nossos eventos<br />
+                            e se
+                            <span className="ml-2 underline decoration-red-700 underline-offset-8">intergre com a comunidade!</span>
+                        </p>
+                        <Image className="atividades-images" alt="atividades" src="/assets/party.svg" width={800} height={800} />
                     </li>
                 </ul>
             </article>
-        </section>
+        </section >
     );
 }
 

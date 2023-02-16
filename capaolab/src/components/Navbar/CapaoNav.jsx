@@ -25,8 +25,6 @@ const CapaoNav = () => {
         }
     }, []);
 
-
-
     return (
         <nav className="capao-nav">
             {scroll === 0 ? <SocitalNav /> : null}
