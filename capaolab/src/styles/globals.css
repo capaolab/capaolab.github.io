@@ -1,0 +1,239 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&family=Ubuntu:wght@300;400;500;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+    html, body{
+        @apply h-full w-full font-ubuntu
+    }
+    h1 {
+        @apply text-5xl 2xl:text-7xl font-bold tracking-wider
+    }
+    h2 {
+        @apply text-4xl 2xl:text-5xl font-medium tracking-wide
+    }
+    h3 {
+        @apply text-xl tracking-wide
+    }
+    p {
+        @apply text-base font-light 2xl:text-xl tracking-wide
+    }
+    a {
+        @apply text-base 2xl:text-xl tracking-wide
+    }
+    span {
+        @apply text-base font-light 2xl:text-2xl tracking-wide
+    }
+    button {
+        @apply text-base 2xl:text-xl
+    }
+}
+
+
+@layer components {
+    #__next {
+        @apply w-full h-full 
+    }
+
+    /* GLOBAL */
+    .alinhamento {
+        @apply px-5 sm:px-32 2xl:px-64 
+    }
+    
+    /* SVG ICONS */
+    #toggle-svg {
+        @apply  text-3xl
+    }
+    #webapp-svg {
+        @apply  text-green-500 text-5xl
+    }
+    #equipe-svg {
+        @apply  text-gray-700 text-xl
+    }
+    #footer-svg {
+        @apply  text-gray-400 text-xl
+    }
+    #footer-news-svg {
+        @apply  text-green-500 text-xl
+    }
+    #footer-contato-svg {
+        @apply  text-green-500 text-xl
+    }
+    .icon-inner{
+        @apply w-auto h-auto flex justify-start items-end
+    }
+    .logo-image{
+        @apply w-20 h-20 py-4 hidden md:flex
+    }
+    .logo-title{
+        @apply h-full text-2xl p-4
+        flex justify-start items-center
+        text-green-500 font-semibold uppercase
+    }
+    /* BUTTONS */
+    .btn-carousel {
+        @apply w-40 h-auto px-4 py-2 space-x-4
+        flex justify-center items-center
+        text-white rotate-[270deg] 
+        hover:text-green-500
+    }
+
+    .btn-action {
+        @apply w-40 h-auto px-4 py-2 
+        font-medium tracking-wide
+        text-center text-white hover:text-green-500
+        hover:bg-white
+        border border-white hover:border-none
+    }
+
+    /* NAV BAR*/
+    .capao-nav {
+        @apply w-full h-auto fixed top-0 z-50
+        flex flex-col bg-black bg-opacity-40 
+        text-white font-normal tracking-wide
+        backdrop-blur-md
+    }  
+    .social-nav {
+        @apply w-full h-auto py-2
+        flex justify-center lg:justify-end items-center
+        border-b border-gray-500
+    }
+    .social-icons {
+        @apply flex flex-row space-x-8 px-7
+    } 
+    .menu-nav {
+        @apply w-full h-auto px-5 lg:px-32 2xl:px-64 
+        flex justify-between lg:justify-end space-x-5
+    }
+    .menu-nav-btn {
+        @apply w-full capitalize hidden
+        lg:flex justify-end
+    }
+    .menu-nav-btn a {
+        @apply flex justify-end items-start text-start align-top p-6
+        hover:text-[#0ac775] duration-500 hover:scale-125 
+        text-xl whitespace-nowrap
+    }
+    .hamburger-btn {
+        @apply flex items-center justify-center lg:hidden 
+        
+    }
+
+    /* SHOW CASE */
+    .showcase {
+        @apply w-full h-full relative
+    }
+    .carousel {
+        @apply w-full h-full z-0
+    }
+    .carousel-navegation {
+        @apply w-auto h-auto absolute top-72 right-0 2xl:top-96 z-20
+        flex flex-col
+        space-y-40
+    }
+    .carousel-img {
+        @apply w-screen h-full
+        blur-[2px] z-0 
+    }
+    .atividades {
+        @apply w-full h-auto py-16
+        flex flex-col justify-center items-center
+        bg-white
+    }
+    .atividades h2 {
+        @apply py-16
+    }
+    .atividades ul {
+        @apply w-full h-full gap-6
+        sm:flex justify-center items-center lg:justify-between
+    }
+    .atividades ul li {
+        @apply w-auto h-full
+        flex flex-col justify-center items-center
+    }
+    .atividades-name {
+        @apply  mb-3 text-lg
+    }
+    .atividades-images {
+        @apply w-60 h-60 rounded-full 
+    }
+    .action {
+        @apply w-auto h-full z-10 absolute top-0 
+        flex flex-col justify-center items-center
+        backdrop-brightness-90 bg-black/10
+    }
+    .action-wrapper {
+        @apply w-auto h-auto px-5 sm:px-32 2xl:px-64
+        mb-20 
+    }
+    .action-wrapper h2 {
+        @apply py-4 font-bold text-white underline underline-offset-8
+        decoration-yellow-200
+    }
+    .action-wrapper p {
+        @apply w-2/3 py-4 text-lg text-white leading-6
+    }
+    .action-wrapper div {
+        @apply w-full h-auto mt-6 gap-6
+        flex flex-col sm:flex-row 
+    }
+
+    /* WORK SESSION */
+    
+    .work{
+        @apply w-full h-full py-32 md:py-64
+        flex flex-col  items-center
+        bg-slate-800 text-white
+    }
+    .work-wrapper{
+        @apply h-auto  grid grid-cols-1 sm:grid-cols-2 gap-12
+        justify-center items-center
+    }
+   
+
+    /* EQUIPE SESSION */
+
+    .equipe{
+        @apply w-full py-32 flex-col sm:flex-wrap justify-center 
+        items-center space-y-12 
+    }
+    .equipe h2 {
+        @apply text-center font-bold
+    }
+    .equipe-list{
+        @apply flex flex-wrap gap-6 justify-center items-center
+        2xl:justify-between
+    }
+    .equipe-image {
+        @apply w-80 h-auto
+    }
+
+    /* FOOTER */
+
+    .capao-footer{
+        @apply w-full h-auto py-20
+        flex justify-center lg:justify-start items-start
+        bg-gray-900 text-white
+    }
+    .footer-sobre{
+        @apply w-1/3 h-full px-4 
+        hidden lg:flex flex-col justify-start items-start 
+    }
+    .footer-events{
+        @apply w-1/3 h-full px-4 
+        hidden lg:flex flex-col justify-start items-start
+    }
+    .footer-contatos{
+        @apply w-1/3 h-full px-4 
+        flex flex-col justify-start items-start
+    }
+    .footer-news{
+        @apply w-full h-full flex space-x-2 
+    }
+    .footer-contatos-item{
+        @apply w-full h-full flex flex-col  
+    }
+}
