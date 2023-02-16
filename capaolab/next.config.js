@@ -1,6 +1,7 @@
 /** @type {import('next').NextConfig} */
 
 const nextConfig = {
+  assetPrefix: isProd ? process.env.NEXT_PUBLIC_BASE_PATH : '',
   reactStrictMode: true,
   images: {
     remotePatterns: [
