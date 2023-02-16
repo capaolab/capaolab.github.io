@@ -40,7 +40,7 @@
 
     /* GLOBAL */
     .alinhamento {
-        @apply px-5 sm:px-32 2xl:px-64 
+        @apply px-5 lg:px-32 2xl:px-64 
     }
     
     /* SVG ICONS */
@@ -114,8 +114,8 @@
     }
     .menu-nav-btn a {
         @apply flex justify-end items-start text-start align-top p-6
-        hover:text-[#0ac775] duration-500 hover:scale-125 
-        text-xl whitespace-nowrap
+        hover:text-[#0ac775] duration-500 hover:scale-125 text-lg 2xl:text-2xl
+        
     }
     .hamburger-btn {
         @apply flex items-center justify-center lg:hidden 
@@ -166,7 +166,7 @@
         backdrop-brightness-90 bg-black/10
     }
     .action-wrapper {
-        @apply w-auto h-auto px-5 sm:px-32 2xl:px-64
+        @apply w-auto h-auto px-5 lg:px-32 2xl:px-64
         mb-20 
     }
     .action-wrapper h2 {
@@ -184,12 +184,12 @@
     /* WORK SESSION */
     
     .work{
-        @apply w-full h-full py-32 md:py-64
+        @apply w-full h-auto py-32 md:py-64
         flex flex-col  items-center
         bg-slate-800 text-white
     }
     .work-wrapper{
-        @apply h-auto  grid grid-cols-1 sm:grid-cols-2 gap-12
+        @apply h-full grid grid-cols-1 sm:grid-cols-2 gap-20
         justify-center items-center
     }
    
