@@ -5,35 +5,34 @@ name: Node.js CI
 
 on:
   push:
-    branches: [ master ]
+    branches: [main]
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
 
-    env:
-      NEXT_PUBLIC_BASE_PATH: ""
-
-    strategy:
-      matrix:
-        node-version: [16.x]
-        # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
-
     steps:
-    - uses: actions/checkout@v3
-    - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v3
-      with:
-        node-version: ${{ matrix.node-version }}
-        cache: 'npm'
-    - run: npm ci
-    - run: npm run build
+      # https://github.com/actions/checkout
+      - uses: actions/checkout@v3
 
-    - name: Deploy 🚀
-      uses: JamesIves/github-pages-deploy-action@v4.3.0
-      with:
-        GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
-        branch: gh-pages # The branch the action should deploy to.
-        folder: ./capaolab/out # The folder the action should deploy.
+      # a standard step for GitHub actions on Node
+      # https://github.com/actions/setup-node
+      - uses: actions/setup-node@v3
+        with:
+          # update the Node version to meet your needs
+          node-version: 16
+          cache: npm
 
+      - name: Build
+        run: |
+          npm ci
+          npm run build
+          npm run export
+          touch out/.nojekyll
+
+      - name: Deploy
+        # https://github.com/JamesIves/github-pages-deploy-action
+        uses: JamesIves/github-pages-deploy-action@4.4.0
+        with:
+          branch: gh-pages
+          folder: out
