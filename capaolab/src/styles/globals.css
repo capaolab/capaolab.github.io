@@ -1,3 +1,5 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&family=Ubuntu:wght@300;400;500;700&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -5,7 +7,7 @@
 
 @layer base {
     html, body{
-        @apply h-full w-full
+        @apply h-full w-full font-ubuntu
     }
     h1 {
         @apply text-5xl 2xl:text-7xl font-bold tracking-wider
@@ -17,10 +19,10 @@
         @apply text-xl tracking-wide
     }
     p {
-        @apply text-base font-light 2xl:text-2xl tracking-wide
+        @apply text-base font-light 2xl:text-xl tracking-wide
     }
     a {
-        @apply text-base 2xl:text-2xl tracking-wide
+        @apply text-base 2xl:text-xl tracking-wide
     }
     span {
         @apply text-base font-light 2xl:text-2xl tracking-wide
@@ -43,7 +45,7 @@
     
     /* SVG ICONS */
     #toggle-svg {
-        @apply  text-5xl
+        @apply  text-3xl
     }
     #webapp-svg {
         @apply  text-green-500 text-5xl
@@ -64,7 +66,7 @@
         @apply w-auto h-auto flex justify-start items-end
     }
     .logo-image{
-        @apply w-20 h-20 py-4
+        @apply w-20 h-20 py-4 hidden md:flex
     }
     .logo-title{
         @apply h-full text-2xl p-4
@@ -91,7 +93,7 @@
     .capao-nav {
         @apply w-full h-auto fixed top-0 z-50
         flex flex-col bg-black bg-opacity-40 
-        text-white font-medium tracking-wide
+        text-white font-normal tracking-wide
         backdrop-blur-md
     }  
     .social-nav {
@@ -108,15 +110,16 @@
     }
     .menu-nav-btn {
         @apply w-full capitalize hidden
-        lg:flex justify-end 
+        lg:flex justify-end
     }
     .menu-nav-btn a {
         @apply flex justify-end items-start text-start align-top p-6
         hover:text-[#0ac775] duration-500 hover:scale-125 
-        text-2xl
+        text-xl whitespace-nowrap
     }
     .hamburger-btn {
         @apply flex items-center justify-center lg:hidden 
+        
     }
 
     /* SHOW CASE */
@@ -167,10 +170,11 @@
         mb-20 
     }
     .action-wrapper h2 {
-        @apply py-4  font-bold text-white
+        @apply py-4 font-bold text-white underline underline-offset-8
+        decoration-yellow-200
     }
     .action-wrapper p {
-        @apply w-2/3 py-4 font-medium text-white 
+        @apply w-2/3 py-4 text-lg text-white leading-6
     }
     .action-wrapper div {
         @apply w-full h-auto mt-6 gap-6

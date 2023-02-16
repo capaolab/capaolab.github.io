@@ -1,30 +1,16 @@
 export const carouselImages = [
     {
-        image: 'https://images.unsplash.com/photo-1661961112951-f2bfd1f253ce?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1172&q=80',
+        image: 'https://images.unsplash.com/photo-1610135179700-7352352238d2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80',
         content: {
-            title: "BootCamp 1",
-            description: "Mussum Ipsum, cacilds vidis litro abertis. Casamentiss faiz malandris se pirulitá.Sapien in monti palavris qui num significa nadis i pareci latim.Delegadis gente finis, bibendum egestas augue arcu ut est.Leite de capivaris, leite de mula manquis sem cabeça."
+            title: "BootCamp Suporte Técnico 2023",
+            description: "Vamos cobrir as principais habilidades técnicas exigidas pelo mercado de trabalho para habilitar pessoas a atuarem como suporte técnico. Foco principal em tecnologia web"
         }
     },
     {
-        image: 'https://images.unsplash.com/photo-1661961110144-12ac85918e40?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80',
+        image: 'https://images.unsplash.com/photo-1619410283995-43d9134e7656?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80',
         content: {
-            title: "BootCamp 2",
-            description: "Mussum Ipsum, cacilds vidis litro abertis. Casamentiss faiz malandris se pirulitá.Sapien in monti palavris qui num significa nadis i pareci latim.Delegadis gente finis, bibendum egestas augue arcu ut est.Leite de capivaris, leite de mula manquis sem cabeça."
-        }
-    },
-    {
-        image: 'https://images.unsplash.com/photo-1674796930386-ea3ed55beece?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1333&q=80',
-        content: {
-            title: "BootCamp 3",
-            description: "Mussum Ipsum, cacilds vidis litro abertis. Casamentiss faiz malandris se pirulitá.Sapien in monti palavris qui num significa nadis i pareci latim.Delegadis gente finis, bibendum egestas augue arcu ut est.Leite de capivaris, leite de mula manquis sem cabeça."
-        }
-    },
-    {
-        image: 'https://images.unsplash.com/photo-1662567239284-e7b01bd4f2da?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80',
-        content: {
-            title: "BootCamp 4",
-            description: "Mussum Ipsum, cacilds vidis litro abertis. Casamentiss faiz malandris se pirulitá.Sapien in monti palavris qui num significa nadis i pareci latim.Delegadis gente finis, bibendum egestas augue arcu ut est.Leite de capivaris, leite de mula manquis sem cabeça."
+            title: "Intensivo JavaScript 2023",
+            description: "A partir de Abril vamos começar a fazer um intensivo semanal de JavaScript para comunidade. Serão feitos vários micro-projetos!"
         }
     },
 ]

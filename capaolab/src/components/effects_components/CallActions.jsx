@@ -1,5 +1,3 @@
-import React from 'react'
-
 const CallActions = ({ title, description }) => {
     return (
         <article className="action">
