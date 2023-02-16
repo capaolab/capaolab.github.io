@@ -30,7 +30,7 @@ const CapaoNav = () => {
             {scroll === 0 ? <SocitalNav /> : null}
             <section className="menu-nav">
                 <div className="flex">
-                    <Image className="logo-image" alt="logo" src="/assets/logo.png" width={800} height={800} />
+                    <Image className="logo-image" alt="logo" src="/assets/logo.png" width={100} height={100} />
                     <h1 className="logo-title">Capao_Lab</h1>
                 </div>
                 <div className="menu-nav-btn">

@@ -43,7 +43,7 @@
     
     /* SVG ICONS */
     #toggle-svg {
-        @apply  text-xl
+        @apply  text-5xl
     }
     #webapp-svg {
         @apply  text-green-500 text-5xl
@@ -64,10 +64,10 @@
         @apply w-auto h-auto flex justify-start items-end
     }
     .logo-image{
-        @apply w-20 h-20 p-4
+        @apply w-20 h-20 py-4
     }
     .logo-title{
-        @apply h-full text-2xl
+        @apply h-full text-2xl p-4
         flex justify-start items-center
         text-green-500 font-semibold uppercase
     }
@@ -113,9 +113,11 @@
     .menu-nav-btn a {
         @apply flex justify-end items-start text-start align-top p-6
         hover:text-[#0ac775] duration-500 hover:scale-125 
+        text-2xl whitespace-nowrap
     }
     .hamburger-btn {
-        @apply flex items-center justify-center lg:hidden 
+        @apply  flex items-center justify-center lg:hidden 
+        
     }
 
     /* SHOW CASE */
