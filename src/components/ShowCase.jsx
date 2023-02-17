@@ -20,16 +20,16 @@ const ShowCase = () => {
                     </li>
                     <li>
                         <Image className="atividades-images hidden sm:flex" alt="atividades" src="/assets/popular.svg" width={800} height={800} />
-                        <p className="atividades-name ">
-                            Aguarde o e-mail da nossa equipe com link<br />
+                        <p className="w-full sm:w-2/3 atividades-name">
+                            <span className="font-medium mr-2 underline decoration-red-700 underline-offset-8">Aguarde o e-mail</span>
+                            da nossa equipe com link
                             de acesso a nossos canais de comunicação
                         </p>
                         <Image className="atividades-images sm:hidden" alt="atividades" src="/assets/popular.svg" width={800} height={800} />
                     </li>
                     <li>
                         <p className="atividades-name ">
-                            Fique atento ao nossos eventos<br />
-                            e se
+                            Fique atento ao nossos eventos e se
                             <span className="ml-2 underline font-normal decoration-red-700 underline-offset-8">intergre com a comunidade!</span>
                         </p>
                         <Image className="atividades-images" alt="atividades" src="/assets/party.svg" width={800} height={800} />
