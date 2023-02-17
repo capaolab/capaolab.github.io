@@ -12,24 +12,25 @@ const ShowCase = () => {
                     <li>
                         <p className="atividades-name ">
                             Envie um email para:<br />
-                            <a className="underline mt-1 decoration-red-700 underline-offset-8"
+                            <a className="underline mt-1 font-normal decoration-red-700 underline-offset-8"
                                 href="mailto:labcaete@gmail.com">labcaete@gmail.com
                             </a>
                         </p>
                         <Image className="atividades-images" alt="atividades" src="/assets/email.svg" width={800} height={800} />
                     </li>
                     <li>
-                        <Image className="atividades-images" alt="atividades" src="/assets/popular.svg" width={800} height={800} />
+                        <Image className="atividades-images hidden sm:flex" alt="atividades" src="/assets/popular.svg" width={800} height={800} />
                         <p className="atividades-name ">
-                            Aguarde o e-mail da nossa equipe<br />
-                            com link de acesso a nossos canais de comunicação
+                            Aguarde o e-mail da nossa equipe com link<br />
+                            de acesso a nossos canais de comunicação
                         </p>
+                        <Image className="atividades-images sm:hidden" alt="atividades" src="/assets/popular.svg" width={800} height={800} />
                     </li>
                     <li>
                         <p className="atividades-name ">
                             Fique atento ao nossos eventos<br />
                             e se
-                            <span className="ml-2 underline decoration-red-700 underline-offset-8">intergre com a comunidade!</span>
+                            <span className="ml-2 underline font-normal decoration-red-700 underline-offset-8">intergre com a comunidade!</span>
                         </p>
                         <Image className="atividades-images" alt="atividades" src="/assets/party.svg" width={800} height={800} />
                     </li>
