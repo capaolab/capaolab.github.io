@@ -91,9 +91,9 @@
 
     /* NAV BAR*/
     .capao-nav {
-        @apply w-full h-auto fixed top-0 z-50
-        flex flex-col bg-black bg-opacity-40 
-        text-white font-normal tracking-wide
+        @apply w-full h-auto fixed py-2 top-0 z-50
+        flex flex-col items-center
+        bg-black bg-opacity-40 text-white font-normal tracking-wide
         backdrop-blur-md
     }  
     .social-nav {

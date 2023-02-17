@@ -11,7 +11,7 @@ const Equipe = () => {
                         equipeData.map((data) => {
                             return (
                                 <li key={data.id}>
-                                    <Image className="equipe-image" alt="atividades" src={data.image} width={800} height={800} />
+                                    <Image className="equipe-image" alt="atividades" src={`/assets/${data.image}`} width={800} height={800} />
                                     <h3 className="mt-2">{data.title}</h3>
                                     <p>{data.job}</p>
                                     <ul className="mt-4">

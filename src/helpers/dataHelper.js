@@ -57,26 +57,26 @@ export const workData = [
 export const equipeData = [
     {
         id: 1,
-        image: "https://images.unsplash.com/photo-1675541744669-c4796e241421?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
-        title: "Dean Almeida",
-        job: "Diretor",
-        social_1: "logo-linkedin",
-        social_2: "logo-instagram",
-        social_3: "mail-outline"
-    },
-    {
-        id: 2,
-        image: "https://images.unsplash.com/photo-1675505657657-d69fada7287c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
-        title: "Guilherme Santos",
+        image: "viriato.jpeg",
+        title: "Viriato Sampaio",
         job: "Mestre Jedi - Engenharia",
         social_1: "logo-linkedin",
         social_2: "logo-instagram",
         social_3: "mail-outline"
     },
     {
+        id: 2,
+        image: "dean.jpg",
+        title: "Dean Almeida",
+        job: "Jedi - Engenharia",
+        social_1: "logo-linkedin",
+        social_2: "logo-instagram",
+        social_3: "mail-outline"
+    },
+    {
         id: 3,
-        image: "https://images.unsplash.com/photo-1674823191598-bd32e659a515?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
-        title: "Joana Almeida",
+        image: "aila.jpg",
+        title: "Aila Peterhans",
         job: "Mestre Jedi - RH",
         social_1: "logo-linkedin",
         social_2: "logo-instagram",

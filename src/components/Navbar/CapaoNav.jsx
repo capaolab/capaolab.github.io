@@ -1,7 +1,6 @@
 /* import Image from "next/image" */
 import { useState, useCallback, useEffect } from "react"
 import SocitalNav from "./SocitalNav"
-import ToggleMenu from "./ToggleMenu"
 import Image from "next/image"
 
 
@@ -29,7 +28,7 @@ const CapaoNav = () => {
         <nav className="capao-nav">
             {scroll === 0 ? <SocitalNav /> : null}
             <section className="menu-nav">
-                <div className="flex">
+                <div className="flex items-center">
                     <Image className="logo-image" alt="logo" src="/assets/logo.png" width={100} height={100} />
                     <h1 className="logo-title">Capao_Lab</h1>
                 </div>
@@ -43,7 +42,16 @@ const CapaoNav = () => {
                     <ion-icon id="toggle-svg" name={iconName} onClick={handleToggle}></ion-icon>
                 </div>
             </section>
-            {iconName === "close" ? <ToggleMenu /> : null}
+            {iconName === "close"
+                ?
+                <div className="w-full h-screen capitalize flex flex-col justify-start my-10 gap-5 px-5">
+                    <a className="text-xl" onClick={handleToggle} href="#carousel">Inicio</a>
+                    <a className="text-xl" onClick={handleToggle} href="#participar">Participar</a>
+                    <a className="text-xl" onClick={handleToggle} href="#work">O que fazemos</a>
+                    <a className="text-xl" onClick={handleToggle} href="#equipe">Equipe</a>
+                </div>
+                : null
+            }
         </nav>
     )
 }
