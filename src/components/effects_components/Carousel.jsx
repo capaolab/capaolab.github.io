@@ -24,8 +24,8 @@ const Carousel = () => {
                 className="carousel-img absolute top-0"
                 alt="carousel"
                 src={carouselImages[index].image}
-                width={1920}
-                height={1080}
+                width={1280}
+                height={720}
             />
             <div className="carousel-navegation">
                 <button className="btn-carousel" onClick={handleNext}>
@@ -41,6 +41,21 @@ const Carousel = () => {
                     <p>Previous</p>
                 </button>
             </div>
+            <div className="md:hidden w-full h-full absolute top-[700px] z-20 flex justify-center items-start">
+                <button className="w-40 h-auto px-4 py-2 space-x-4 flex justify-center items-center text-white  hover:text-green-500" onClick={handlePrevious}>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 12h-15m0 0l6.75 6.75M4.5 12l6.75-6.75" />
+                    </svg>
+                    <p>Previous</p>
+                </button>
+                <button className="w-40 h-auto px-4 py-2 space-x-4 flex justify-center items-center text-white  hover:text-green-500" onClick={handleNext}>
+                    <p>Next</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75" />
+                    </svg>
+                </button>
+            </div>
+            
         </div>
     );
 }
