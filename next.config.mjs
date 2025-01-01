@@ -8,8 +8,6 @@ const nextConfig = {
     images: {
         unoptimized: true // mandatory, otherwise won't export
     }
-    // Optional: Change the output directory `out` -> `dist`
-    // distDir: "build"
 }
 
 const withNextra = nextra({
@@ -17,7 +15,7 @@ const withNextra = nextra({
     themeConfig: './theme.config.jsx'
 })
 
-export default withNextra()
+export default withNextra(nextConfig)
 
 // If you have other Next.js configurations, you can pass them as the parameter:
 // export default withNextra({ /* other next.js config */ })
