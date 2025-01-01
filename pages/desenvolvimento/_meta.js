@@ -1,3 +1,4 @@
 export default {
-    index: 'Diretrizes',
+    index: 'Introdução',
+    git: 'Controle de Versão & Git',
 }
